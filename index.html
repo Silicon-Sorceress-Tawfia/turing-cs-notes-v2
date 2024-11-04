@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turing CS Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+  <h1>📘 Welcome to Turing CS Notes</h1>
+  <p>Explore the largest curated collection of Computer Science resources, specially crafted for National University students in Bangladesh and beyond.</p>
+  <input type="text" id="search-bar" placeholder="Search for a subject...">
+  <button id="toggle-theme">
+    <span id="theme-icon">🌞</span>
+  </button>
+</header>
+
+<!-- Main Section with Links to Each Semester -->
+<main class="main-section">
+  <div class="semester-link" onclick="location.href='semester1.html'">
+    <span class="icon">💻</span> Semester I
+  </div>
+  <div class="semester-link" onclick="location.href='semester2.html'">
+    <span class="icon">⚙️</span> Semester II
+  </div>
+  <div class="semester-link" onclick="location.href='semester3.html'">
+    <span class="icon">📐</span> Semester III
+  </div>
+  <div class="semester-link" onclick="location.href='semester4.html'">
+    <span class="icon">📊</span> Semester IV
+  </div>
+  <div class="semester-link" onclick="location.href='semester5.html'">
+    <span class="icon">🔧</span> Semester V
+  </div>
+  <div class="semester-link" onclick="location.href='semester6.html'">
+    <span class="icon">📡</span> Semester VI
+  </div>
+  <div class="semester-link" onclick="location.href='semester7.html'">
+    <span class="icon">🤖</span> Semester VII
+  </div>
+</main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
+  <button onclick="toggleAboutMe()">About Me</button>
+</footer>
+
+<!-- About Me Section -->
+<div id="aboutMeText" class="about-me" style="display: none;">
+  <h3>About the Developer</h3>
+  <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes...</p>
+</div>
+
+<script>
+  // Toggle Dark/Light Mode with Sun/Moon Icon
+  const toggleThemeButton = document.getElementById('toggle-theme');
+  const themeIcon = document.getElementById('theme-icon');
+
+  toggleThemeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
+  });
+
+  // Toggle About Me Text
+  function toggleAboutMe() {
+    const aboutMeText = document.getElementById("aboutMeText");
+    aboutMeText.style.display = aboutMeText.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
