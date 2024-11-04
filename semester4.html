@@ -3,36 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semester IV - Turing CS Notes</title>
+  <title>Semester IV Subjects</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Header Section -->
 <header class="header">
   <h1>Semester IV Subjects</h1>
   <p>Explore the subjects covered in Semester IV.</p>
-  <button id="toggle-theme">
-    <span id="theme-icon">🌞</span>
-  </button>
 </header>
 
-<main class="subject-list">
-  <div class="subject">💾 Database Management System</div>
-  <div class="subject">🖥️ Database Management System Lab</div>
-  <div class="subject">🧠 Microprocessor and Assembly Language</div>
-  <div class="subject">📈 Design and Analysis of Algorithms</div>
-  <div class="subject">📐 Numerical Analysis</div>
+<!-- Main Section with Subject Links -->
+<main class="main-section">
+  <div class="semester-link">
+    <span class="icon">💾</span> Database Management System
+  </div>
+  <div class="semester-link">
+    <span class="icon">🧪</span> Database Management System Lab
+  </div>
+  <div class="semester-link">
+    <span class="icon">⚙️</span> Microprocessor and Assembly Language
+  </div>
+  <div class="semester-link">
+    <span class="icon">📉</span> Design and Analysis of Algorithms
+  </div>
+  <div class="semester-link">
+    <span class="icon">🔢</span> Numerical Analysis
+  </div>
 </main>
 
-<script>
-  const toggleThemeButton = document.getElementById('toggle-theme');
-  const themeIcon = document.getElementById('theme-icon');
-
-  toggleThemeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
-  });
-</script>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
+</footer>
 
 </body>
 </html>
