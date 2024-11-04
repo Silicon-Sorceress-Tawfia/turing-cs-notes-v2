@@ -1,9 +1,9 @@
-// Theme Toggle and Rocket Animation
+// JavaScript for Theme Toggle, About Me Modal, and Rocket Animation
 const toggleThemeButton = document.getElementById('toggle-theme');
 const themeIcon = document.getElementById('theme-icon');
 const rocket = document.getElementById('rocket');
 
-// Toggle theme and launch rocket on theme change
+// Toggle Dark/Light Mode with Sun/Moon Icon
 toggleThemeButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
