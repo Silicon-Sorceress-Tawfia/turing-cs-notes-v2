@@ -49,15 +49,7 @@
 <!-- Footer Section -->
 <footer class="footer">
   <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
-  <button onclick="toggleAboutMe()">About Me</button>
 </footer>
-
-<!-- About Me Modal Section -->
-<div id="aboutMeText" class="about-me">
-  <span class="close-button" onclick="toggleAboutMe()">×</span>
-  <h3>About the Developer</h3>
-  <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes. I made this to help students in Bangladesh, inspired by the lack of resources for National University students. I hope you find it useful!</p>
-</div>
 
 <script>
   // Toggle Dark/Light Mode with Sun/Moon Icon
@@ -68,12 +60,6 @@
     document.body.classList.toggle('dark-mode');
     themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
   });
-
-  // Toggle About Me Modal
-  function toggleAboutMe() {
-    const aboutMeText = document.getElementById("aboutMeText");
-    aboutMeText.classList.toggle("show");
-  }
 </script>
 
 </body>
