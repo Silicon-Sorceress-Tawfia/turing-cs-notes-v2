@@ -4,68 +4,17 @@ Turing CS Notes is a curated resource hub for computer science students, specifi
 Project Overview
 This project includes a main page linking to individual semester pages, each displaying the subjects covered in that semester. Semester VIII is marked as "Coming Soon" as its content is under development. The project is built using HTML and CSS and is hosted on GitHub Pages for easy access.
 
-Project Structure
-The project is structured as follows:
 
-index.html: The main landing page with clickable boxes for each semester (I to VIII).
-semester1.html to semester7.html: Individual pages for each semester, displaying subjects as clickable boxes.
-semester8.html: A "Coming Soon" page for Semester VIII, indicating that content is still in progress.
-styles.css: Shared CSS file for consistent styling across all pages, including dark mode support.
-Features
-Main Page: Displays clickable boxes for each semester, styled consistently with icons.
-Individual Semester Pages (Semester I - VII): Each page lists subjects as clickable boxes, styled identically to the semester links on the main page.
-"Coming Soon" for Semester VIII: When users click on Semester VIII, they are directed to a page with a message indicating that the content will be available soon.
-Dark Mode: Users can toggle between light and dark themes on all pages for a more comfortable viewing experience.
-Semester Details
-Each semester page lists specific subjects as follows:
+Main Page (index.html): Displays clickable boxes for each semester (I to VIII), serving as the entry point for the site.
 
-Semester I
+Semester Pages (semester1.html to semester7.html): Individual pages for each semester, listing subjects as clickable boxes styled consistently.
 
-Structured Programming Language
-Electrical and Electronic Circuit
-Calculus
-Physics
-English
-Semester II
+"Coming Soon" Page (semester8.html): Dedicated page for Semester VIII with a "Coming Soon" message indicating future content.
 
-Digital Systems Design
-Discrete Mathematics
-Linear Algebra
-Statistics and Probability
-History of the Emergence of Independent Bangladesh
-Semester III
+CSS (styles.css): Shared styling across all pages, providing consistent design elements and dark mode support.
 
-Data Structure
-Object Oriented Programming
-Computer Architecture
-Ordinary Differential Equation
-Fundamentals of Business Studies
-Semester IV
+Deployment: Hosted on GitHub Pages, enabling easy access and navigation of the site.
 
-Database Management System
-Database Management System Lab
-Microprocessor and Assembly Language
-Design and Analysis of Algorithms
-Numerical Analysis
-Semester V
-
-Peripheral and Interfacing
-Data and Telecommunications
-Operating System
-Economics
-Semester VI
-
-Software Engineering
-Computer Networking
-Embedded System Programming
-Theory of Computation
-Semester VII
-
-Artificial Intelligence
-Compiler Design and Construction
-Computer Graphics
-E-Commerce and Web Engineering
-Semester VIII: Coming Soon
 
 Usage
 Accessing the Site: The project is hosted on GitHub Pages. Visit the main page to start exploring the semesters.
