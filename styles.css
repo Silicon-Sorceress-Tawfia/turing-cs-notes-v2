@@ -1,41 +1,185 @@
-/* Existing styles here... */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-/* Rocket Styling */
-.rocket {
-  position: absolute;
-  font-size: 3em;
+/* Body and Background */
+body {
+  background-color: #F0F8FF;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #1a73e8;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+#search-bar {
+  margin-top: 20px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 1em;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-theme {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Main Section (Semester Links) */
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.semester-link {
+  background-color: #e0f7fa;
+  color: #333;
+  border-radius: 30px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.semester-link:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+/* About Me Modal */
+.about-me {
+  display: none;
+  position: fixed;
   top: 50%;
-  left: -10%;
-  transform: translateY(-50%);
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.3s ease-out;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 500px;
+  z-index: 1000;
+  text-align: center;
 }
 
-@keyframes glide {
-  0% {
-    left: -10%;
-    transform: rotate(10deg) scale(1);
-  }
-  25% {
-    left: 25%;
-    transform: rotate(0deg) scale(1.1);
-  }
-  50% {
-    left: 50%;
-    transform: rotate(-10deg) scale(1.2);
-  }
-  75% {
-    left: 75%;
-    transform: rotate(0deg) scale(1.1);
-  }
-  100% {
-    left: 110%;
-    transform: rotate(10deg) scale(1);
-  }
+.about-me.show {
+  display: block;
 }
 
-.rocket.animate {
-  opacity: 1;
-  animation: glide 3s ease-in-out forwards;
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
 }
 
+.about-me h3 {
+  color: #1a73e8;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer button {
+  margin-top: 10px;
+  background: none;
+  color: #1a73e8;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.footer button:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Specific Styling */
+.dark-mode .header h1 {
+  color: #bb86fc;
+}
+
+.dark-mode .semester-link {
+  background-color: #333;
+  color: #f4f4f4;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode #search-bar {
+  background-color: #444;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .about-me {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .footer {
+  background-color: #121212;
+  color: #bbb;
+}
+
+.dark-mode .footer button {
+  color: #bb86fc;
+}
