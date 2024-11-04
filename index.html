@@ -43,6 +43,11 @@
   </div>
 </main>
 
+<!-- Floating Kawaii Icons -->
+<div class="floating-icon">💾</div>
+<div class="floating-icon">📐</div>
+<div class="floating-icon">🔍</div>
+
 <!-- Footer Section -->
 <footer class="footer">
   <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
@@ -50,9 +55,9 @@
 </footer>
 
 <!-- About Me Section -->
-<div id="aboutMeText" class="about-me" style="display: none;">
+<div id="aboutMeText" class="about-me">
   <h3>About the Developer</h3>
-  <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes...</p>
+  <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes. I made this to help students in Bangladesh, inspired by the lack of resources for National University students. I hope you find it useful!</p>
 </div>
 
 <script>
@@ -68,7 +73,7 @@
   // Toggle About Me Text
   function toggleAboutMe() {
     const aboutMeText = document.getElementById("aboutMeText");
-    aboutMeText.style.display = aboutMeText.style.display === "none" ? "block" : "none";
+    aboutMeText.classList.toggle("show");
   }
 </script>
 
