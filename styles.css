@@ -1,12 +1,4 @@
-/* General Styling (existing styles) */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Other styles (not shown for brevity) */
+/* Existing styles here... */
 
 /* Rocket Styling */
 .rocket {
@@ -46,3 +38,4 @@
   opacity: 1;
   animation: glide 3s ease-in-out forwards;
 }
+
