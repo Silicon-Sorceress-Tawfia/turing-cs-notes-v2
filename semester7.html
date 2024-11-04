@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester VII - Turing CS Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Semester VII Subjects</h1>
+  <p>Explore the subjects covered in Semester VII.</p>
+  <button id="toggle-theme">
+    <span id="theme-icon">🌞</span>
+  </button>
+</header>
+
+<main class="subject-list">
+  <div class="subject">🤖 Artificial Intelligence</div>
+  <div class="subject">🛠 Compiler Design and Construction</div>
+  <div class="subject">🎨 Computer Graphics</div>
+  <div class="subject">🌐 E-Commerce and Web Engineering</div>
+</main>
+
+<script>
+  const toggleThemeButton = document.getElementById('toggle-theme');
+  const themeIcon = document.getElementById('theme-icon');
+
+  toggleThemeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
+  });
+</script>
+
+</body>
+</html>
