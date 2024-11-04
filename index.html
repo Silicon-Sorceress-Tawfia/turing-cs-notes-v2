@@ -1,63 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turing CS Notes</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Existing styles here... */
 
-<!-- Header Section -->
-<header class="header">
-  <h1>📘 Welcome to Turing CS Notes</h1>
-  <p>Explore the largest curated collection of Computer Science resources, specially crafted for National University students in Bangladesh and beyond.</p>
-  <input type="text" id="search-bar" placeholder="Search for a subject...">
-  <button id="toggle-theme">
-    <span id="theme-icon">🌞</span>
-  </button>
-</header>
+/* Rocket Styling */
+.rocket {
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease-out;
+}
 
-<!-- Main Section with Links to Each Semester -->
-<main class="main-section">
-  <div class="semester-link" onclick="launchRocket(); location.href='semester1.html'">
-    <span class="icon">💻</span> Semester I
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester2.html'">
-    <span class="icon">⚙️</span> Semester II
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester3.html'">
-    <span class="icon">📐</span> Semester III
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester4.html'">
-    <span class="icon">📊</span> Semester IV
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester5.html'">
-    <span class="icon">🔧</span> Semester V
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester6.html'">
-    <span class="icon">📡</span> Semester VI
-  </div>
-  <div class="semester-link" onclick="launchRocket(); location.href='semester7.html'">
-    <span class="icon">🤖</span> Semester VII
-  </div>
-</main>
+@keyframes glide {
+  0% {
+    left: -10%;
+    transform: rotate(10deg) scale(1);
+  }
+  25% {
+    left: 25%;
+    transform: rotate(0deg) scale(1.1);
+  }
+  50% {
+    left: 50%;
+    transform: rotate(-10deg) scale(1.2);
+  }
+  75% {
+    left: 75%;
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    left: 110%;
+    transform: rotate(10deg) scale(1);
+  }
+}
 
-<!-- Rocket Element -->
-<div class="rocket" id="rocket">🚀</div>
+.rocket.animate {
+  opacity: 1;
+  animation: glide 3s ease-in-out forwards;
+}
 
-<!-- Footer Section -->
-<footer class="footer">
-  <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
-  <button onclick="toggleAboutMe(); launchRocket()">About Me</button>
-</footer>
-
-<!-- About Me Section -->
-<div id="aboutMeText" class="about-me">
-  <h3>About the Developer</h3>
-  <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes. I made this to help students in Bangladesh, inspired by the lack of resources for National University students. I hope you find it useful!</p>
-</div>
-
-<script src="script.js"></script> <!-- Separate JavaScript file -->
-</body>
-</html>
