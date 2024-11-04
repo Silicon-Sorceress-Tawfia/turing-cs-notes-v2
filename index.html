@@ -20,33 +20,28 @@
 
 <!-- Main Section with Links to Each Semester -->
 <main class="main-section">
-  <div class="semester-link" onclick="location.href='semester1.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester1.html'">
     <span class="icon">💻</span> Semester I
   </div>
-  <div class="semester-link" onclick="location.href='semester2.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester2.html'">
     <span class="icon">⚙️</span> Semester II
   </div>
-  <div class="semester-link" onclick="location.href='semester3.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester3.html'">
     <span class="icon">📐</span> Semester III
   </div>
-  <div class="semester-link" onclick="location.href='semester4.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester4.html'">
     <span class="icon">📊</span> Semester IV
   </div>
-  <div class="semester-link" onclick="location.href='semester5.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester5.html'">
     <span class="icon">🔧</span> Semester V
   </div>
-  <div class="semester-link" onclick="location.href='semester6.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester6.html'">
     <span class="icon">📡</span> Semester VI
   </div>
-  <div class="semester-link" onclick="location.href='semester7.html'">
+  <div class="semester-link" onclick="launchRocket(); location.href='semester7.html'">
     <span class="icon">🤖</span> Semester VII
   </div>
 </main>
-
-<!-- Floating Kawaii Icons -->
-<div class="floating-icon">💾</div>
-<div class="floating-icon">📐</div>
-<div class="floating-icon">🔍</div>
 
 <!-- Rocket Element -->
 <div class="rocket" id="rocket">🚀</div>
@@ -54,7 +49,7 @@
 <!-- Footer Section -->
 <footer class="footer">
   <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
-  <button onclick="toggleAboutMe()">About Me</button>
+  <button onclick="toggleAboutMe(); launchRocket()">About Me</button>
 </footer>
 
 <!-- About Me Section -->
@@ -63,22 +58,6 @@
   <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes. I made this to help students in Bangladesh, inspired by the lack of resources for National University students. I hope you find it useful!</p>
 </div>
 
-<script>
-  // Toggle Dark/Light Mode with Sun/Moon Icon
-  const toggleThemeButton = document.getElementById('toggle-theme');
-  const themeIcon = document.getElementById('theme-icon');
-
-  toggleThemeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
-  });
-
-  // Toggle About Me Text
-  function toggleAboutMe() {
-    const aboutMeText = document.getElementById("aboutMeText");
-    aboutMeText.classList.toggle("show");
-  }
-</script>
-
+<script src="script.js"></script> <!-- Separate JavaScript file -->
 </body>
 </html>
