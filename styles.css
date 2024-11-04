@@ -34,7 +34,12 @@ body {
   color: #1a73e8;
 }
 
-/* Main Section (Semester Links) */
+.header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Main Section (Subject Links Styled Like Semester Links) */
 .main-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -43,7 +48,7 @@ body {
   margin-top: 30px;
 }
 
-.semester-link {
+.subject-link {
   background-color: #e0f7fa;
   color: #333;
   border-radius: 30px;
@@ -59,7 +64,7 @@ body {
   transition: transform 0.2s;
 }
 
-.semester-link:hover {
+.subject-link:hover {
   transform: scale(1.05);
 }
 
@@ -80,10 +85,24 @@ body {
   bottom: 0;
 }
 
-/* Coming Soon Page Styling */
-.coming-soon-section {
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #666;
-  padding: 50px;
+/* Dark Mode Specific Styling */
+.dark-mode .header h1 {
+  color: #bb86fc;
+}
+
+.dark-mode .subject-link {
+  background-color: #333;
+  color: #f4f4f4;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode #search-bar {
+  background-color: #444;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .footer {
+  background-color: #121212;
+  color: #bbb;
 }
