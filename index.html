@@ -41,6 +41,9 @@
   <div class="semester-link" onclick="location.href='semester7.html'">
     <span class="icon">🤖</span> Semester VII
   </div>
+  <div class="semester-link" onclick="showComingSoonModal()">
+    <span class="icon">🌟</span> Semester VIII
+  </div>
 </main>
 
 <!-- Footer Section -->
@@ -54,6 +57,15 @@
   <span class="close-button" onclick="toggleAboutMe()">×</span>
   <h3>About the Developer</h3>
   <p>Hello everyone! This is Tawfia Yeasmin, the developer behind Turing CS Notes. I made this to help students in Bangladesh, inspired by the lack of resources for National University students. I hope you find it useful!</p>
+</div>
+
+<!-- Coming Soon Modal for Semester VIII -->
+<div id="comingSoonModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeComingSoonModal()">×</span>
+    <h3>Semester VIII - Coming Soon</h3>
+    <p>We're working hard to bring you the final semester resources. Stay tuned!</p>
+  </div>
 </div>
 
 <script>
@@ -70,6 +82,16 @@
   function toggleAboutMe() {
     const aboutMeText = document.getElementById("aboutMeText");
     aboutMeText.classList.toggle("show");
+  }
+
+  // Show "Coming Soon" Modal for Semester VIII
+  function showComingSoonModal() {
+    document.getElementById("comingSoonModal").classList.remove("hidden");
+  }
+
+  // Close "Coming Soon" Modal
+  function closeComingSoonModal() {
+    document.getElementById("comingSoonModal").classList.add("hidden");
   }
 </script>
 
