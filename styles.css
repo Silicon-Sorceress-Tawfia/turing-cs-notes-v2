@@ -121,7 +121,6 @@ body {
   width: 80%;
   max-width: 500px;
   text-align: center;
-  font-family: "Nasa", sans-serif;
 }
 
 .about-me h3 {
@@ -152,6 +151,41 @@ body {
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
+}
+
+/* Rocket Styling */
+.rocket {
+  position: absolute;
+  font-size: 3em;
+  animation: glide 10s linear infinite;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  color: #ff6600;
+}
+
+/* Rocket Animation */
+@keyframes glide {
+  0% {
+    left: -10%;
+    transform: rotate(10deg) scale(1);
+  }
+  25% {
+    left: 25%;
+    transform: rotate(0deg) scale(1.1);
+  }
+  50% {
+    left: 50%;
+    transform: rotate(-10deg) scale(1.2);
+  }
+  75% {
+    left: 75%;
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    left: 110%;
+    transform: rotate(10deg) scale(1);
+  }
 }
 
 /* Dark Mode Styling */
