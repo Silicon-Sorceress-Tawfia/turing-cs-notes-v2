@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semester VI - Turing CS Notes</title>
+  <title>Semester VI Subjects</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Header Section -->
 <header class="header">
   <h1>Semester VI Subjects</h1>
   <p>Explore the subjects covered in Semester VI.</p>
-  <button id="toggle-theme">
-    <span id="theme-icon">🌞</span>
-  </button>
 </header>
 
-<main class="subject-list">
-  <div class="subject">💻 Software Engineering</div>
-  <div class="subject">🌐 Computer Networking</div>
-  <div class="subject">🤖 Embedded System Programming</div>
-  <div class="subject">📚 Theory of Computation</div>
+<!-- Main Section with Subject Links -->
+<main class="main-section">
+  <div class="semester-link">
+    <span class="icon">🖥️</span> Software Engineering
+  </div>
+  <div class="semester-link">
+    <span class="icon">🌐</span> Computer Networking
+  </div>
+  <div class="semester-link">
+    <span class="icon">🔧</span> Embedded System Programming
+  </div>
+  <div class="semester-link">
+    <span class="icon">🧮</span> Theory of Computation
+  </div>
 </main>
 
-<script>
-  const toggleThemeButton = document.getElementById('toggle-theme');
-  const themeIcon = document.getElementById('theme-icon');
-
-  toggleThemeButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeIcon.textContent = document.body.classList.contains('dark-mode') ? '🌜' : '🌞';
-  });
-</script>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2023 Turing CS Notes | All rights reserved</p>
+</footer>
 
 </body>
 </html>
